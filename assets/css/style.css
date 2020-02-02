@@ -1,0 +1,365 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author:
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+ body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	background-color: #f5f8fa;
+}
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2B96CC;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+	color: #1c3354;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #8f96a1;
+	margin-bottom: 15px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+/**
+* Main Css Start
+*
+**/
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid #00d685;
+	padding: 7px 20px;
+	background-color: #F5F8FA;
+	color: #1c3354;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 50px;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn:hover {
+    background-color: #00d685;
+    color: #FFFFFF;
+}
+.hero-button .hero-btn {
+    background: -webkit-linear-gradient(to right, #00c867, #00da8d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00c867, #00da8d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding:15px 50px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: block;
+	font-weight: 600;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 50px;
+	border: 1px solid #00c867;
+	cursor: pointer;
+}
+.hero-button button.hero-btn:hover {
+	background: #F5F8FA;
+	color: #1C3354;
+	transition: 0.3s;
+}
+.main-menu ul li {
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.main-menu ul li.active > a {
+	color: #24cb74;
+}
+.main-menu ul li a:hover {
+    color: #24cb74;
+}
+.main-menu ul li a {
+	text-transform: uppercase;
+	color: #92959b;
+	font-weight: 500;
+	padding: 30px 0;
+	display: block;
+}
+.main-menu ul li ul.sub-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    transition: 0.3s;
+    border-top: 2px solid #00c867;
+    min-width: 200px;
+    text-align: left;
+    box-shadow: 0px 15px 30px 0px rgba(0, 3, 143, 0.1); 
+    opacity: 0;
+    visibility: hidden;
+}
+.main-menu ul li:hover > ul.sub-menu {
+    opacity: 1;
+    visibility: visible;
+    top:100%;
+}
+.main-menu ul li ul.sub-menu li {
+    display: block;
+}
+.main-menu ul li ul.sub-menu li a {
+    padding: 9px 9px;
+}
+span.heading-color {
+    color:#00c867;
+    display: block;
+    line-height: 80px;
+}
+.main-headr h1 {
+	font-size: 50px;
+	font-weight: 900;
+}
+.hero-subtitle p {
+	color:#8f96a1;
+	font-size: 15px;
+}
+.hero-image img {
+    padding-left: 20px;
+}
+/*How It Works*/
+.how-to-works {
+	background: #FFFFFF;
+}
+.how-it-works-main-heading h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.work-items {
+	box-shadow: 0px 15px 30px 0px rgba(0, 3, 143, 0.1);
+	padding: 0 30px;
+}
+.work-item-heading h3 {
+	font-size: 22px;
+	font-weight: 700;
+}
+.read-more a {
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+.read-more a:hover {
+	color: #00C867;
+}
+.easi-section {
+	background: #FFFFFF;
+}
+.bg-images {
+	position: relative;
+}
+.cran-image {
+	position: absolute;
+	top:0;
+	right:20px;
+}
+.easy-whole {
+    padding-left:40px;
+}
+.easy-whole h1 {
+	font-size: 45px;
+}
+.easy-whole span {
+	display: block;
+}
+.chose-your-plan {
+	background: #FFFFFF;
+}
+.testimonial-name li {
+	display: inline-block;
+}
+ul.testimonial-name > li {
+	font-size: 22px;
+	font-weight: 700;
+	margin-right: 10px;
+}
+ul.testimonial-name li:last-child {
+	font-size: 14px;
+	font-weight: 500;
+	color:#9198a2s;
+}
+.input-email {
+	background: #FFFFFF;
+}
+.email-input {
+	padding: 30px 11px;
+	width: 50%;
+	border: 1px solid #eaecee;
+	text-transform: uppercase;
+	color:#d1d3d7;
+}
+.email-submit {
+	padding: 30px 11px;
+	background: #00c867;
+	width: 15%;
+	color: #FFFFFF;
+	border: 1px solid #00c867;
+	margin-left: 10px;
+}
+.horizontal {
+	border: 1px solid #dddddd;
+}
+.copy-right {
+	text-align: right;
+}
+.copy-right li {
+    display: inline-block;
+    padding: 0 8px;
+}
