@@ -311,6 +311,12 @@
                 'default'  => 'Herb fill fowl fourth they re were whales don it first green years seasons seed behold fruitful let gathering good'
             ),
             array(
+                'id'       => 'button-text',
+                'type'     => 'text',
+                'title'    => __( 'Button Link', 'pice' ),
+                'default'  => 'Free Trail'
+            ),
+            array(
                 'id'       => 'button-link',
                 'type'     => 'text',
                 'title'    => __( 'Button Link', 'pice' ),

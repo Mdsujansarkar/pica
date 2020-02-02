@@ -4,13 +4,13 @@
             <div class="col-xl-5">
                 <div class="main-headr wow animated bounceInUp delay-1s slower">
                 <?php global $pice; ?>
-                    <h1><span class="heading-color"><?php echo $pice['heading-text']; ?></span> Future Software Made Simple</h1>
+                    <h1><span class="heading-color"><?php echo $pice['heading-text']; ?></span><?php echo esc_attr($pice['heading-text2']); ?></h1>
                 </div>
                 <div class="hero-subtitle pt-20 wow animated bounceInUp delay-2s slower">
-                    <p>Herb fill fowl fourth they're were whales don it first green years seasons seed behold fruitful let gathering good</p>
+                    <p><?php echo esc_attr($pice['heading-text3']); ?></p>
                 </div>
                 <div class="hero-button pt-20 wow animated bounceInUp delay-2s slower">
-                    <button type="button" class="hero-btn">Free Trail</button>
+                    <button type="button" href="<?php echo esc_url($pice['button-link']); ?>" class="hero-btn"><?php echo esc_attr($pice['button-text']); ?></button>
                 </div>
             </div>
             <div class="col-xl-7 pt-80 pb-120 wow bounceInRight delay-1s">
