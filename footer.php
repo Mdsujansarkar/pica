@@ -10,48 +10,78 @@
  */
 
 ?>
-
+<?php global $pice; ?>
 <footer>
             <div class="main-footer">
                 <div class="container">
+                <?php if( $pice['opt-radio']== 3): ?>
                     <div class="row pt-80 pb-40">
-                        <div class="col-md-4">
-                            <div class="widgetitle">
-                                <h4>Our Mission</h4>
-                            </div>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quos.</p>
+                    <div class="col-md-3">
+                        <?php if(is_active_sidebar('sidebar-1')): ?>
+                            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+                        <?php endif;?>
+                    </div>
+                        <div class="col-md-3">
+                        <?php if(is_active_sidebar('sidebar-2')): ?>
+                            <?php dynamic_sidebar( 'sidebar-2' ); ?>
+                        <?php endif;?>
                         </div>
                         <div class="col-md-3">
-                            <div class="widgetitle">
-                                <h4>Our Mission</h4>
-                            </div>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quos.</p>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="widgetitle">
-                                <h4>Our Mission</h4>
-                            </div>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quos.</p>
+                        <?php if(is_active_sidebar('sidebar-3')): ?>
+                            <?php dynamic_sidebar( 'sidebar-3' ); ?>
+                        <?php endif;?>
                         </div>
                         <div class="col-md-2">
-                            <div class="widgetitle">
-                                <h4>Our Mission</h4>
-                            </div>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quos.</p>
+                        <?php if(is_active_sidebar('sidebar-4')): ?>
+                            <?php dynamic_sidebar( 'sidebar-4' ); ?>
+                        <?php endif;?>
                         </div>
                     </div>
+                <?php elseif($pice['opt-radio']== 2): ?>
+                    <div class="row pt-80 pb-40">
+                        <div class="col-md-4">
+                        <?php if(is_active_sidebar('sidebar-1')): ?>
+                            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+                        <?php endif;?>
+                        </div>
+                        <div class="col-md-4">
+                        <?php if(is_active_sidebar('sidebar-2')): ?>
+                            <?php dynamic_sidebar( 'sidebar-2' ); ?>
+                        <?php endif;?>
+                        </div>
+                        <div class="col-md-4">
+                        <?php if(is_active_sidebar('sidebar-3')): ?>
+                            <?php dynamic_sidebar( 'sidebar-3' ); ?>
+                        <?php endif;?>
+                        </div>
+                    </div>
+                <?php elseif($pice['opt-radio']== 1): ?>
+                    <div class="row pt-80 pb-40">
+                        <div class="col-md-6">
+                        <?php if(is_active_sidebar('sidebar-1')): ?>
+                            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+                        <?php endif;?>
+                        </div>
+                        <div class="col-md-6">
+                        <?php if(is_active_sidebar('sidebar-2')): ?>
+                            <?php dynamic_sidebar( 'sidebar-2' ); ?>
+                        <?php endif;?>
+                        </div>
+                    </div>
+                <?php endif; ?>
                     <div class="row">
                         <div class="col-md-12">
                             <hr>
                         </div>
+                        <?php global $pice; ?>
                         <div class="col-md-6">
-                            <p>Copyright © 2019 Xisen. All rights reserved</p>
+                            <p><?php echo esc_attr($pice['copy-wright']); ?></p>
                         </div>
                         <div class="col-md-6">
                            <ul class="copy-right">
-                               <li><a href="#">About</a></li>
-                               <li><a href="#">Tips & Tricks</a></li>
-                               <li><a href="#">Services</a></li>
+                               <li><a href="<?php echo esc_url($pice['link-1']); ?>"><?php echo esc_attr($pice['link-2']); ?></a></li>
+                               <li><a href="<?php echo esc_attr($pice['link-3']); ?>"><?php echo esc_attr($pice['link-4']); ?></a></li>
+                               <li><a href="<?php echo esc_attr($pice['link-5']); ?>"><?php echo esc_attr($pice['link-6']); ?></a></li>
                            </ul>
                         </div>
                     </div>

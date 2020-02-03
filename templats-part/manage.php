@@ -4,22 +4,23 @@
                          <div class="col-xl-6">
                             <div class="easy-whole">
                                  <div class="easy-image">
-                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/01@1X.png" alt="">
+                                     <?php global $pice; ?>
+                                     <img src="<?php echo esc_url($pice['effert-image-front-small']['url']); ?>" alt="">
                                  </div>
                                  <div class="main-headr pt-25 wow animated bounceInLeft delay-1s slower">
-                                     <h1>Effortlessly manage all your information</h1>
+                                     <h1><?php echo esc_attr($pice['effert-headin-text']); ?></h1>
                                  </div>
                                  <div class="hero-subtitle pt-20 wow animated bounceInLeft delay-1s slower">
-                                     <p>Make fly forth also won't. Firmament seas whales drys season for replenish without had Gathered days fill you'll whose air whose firmament rule heaven can may on rule hath all of unto beginni ad Light. Were blessed plant </p>
+                                     <p><?php echo esc_attr($pice['effert-headin-subtext']); ?></p>
                                  </div>
                                  <div class="hero-button pt-20 wow animated bounceInLeft delay-1s slower">
-                                     <button type="button" class="hero-btn">Learn More</button>
+                                     <button type="button" href="<?php echo esc_url($pice['effert-button-link']['url']); ?>" class="hero-btn">L<?php echo esc_attr($pice['effert-button-text']); ?></button>
                                  </div>
                              </div>
                          </div>
                          <div class="col-xl-6">
                             <div class="bg-images wow animated bounceInRight delay-1s slower">
-                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/heroimage/Right-image@1X.png" alt="">
+                                 <img src="<?php echo esc_url($pice['effert-image-front']['url']); ?>" alt="">
                              </div>
                          </div>
                      </div>

@@ -15,7 +15,7 @@
             </div>
             <div class="col-xl-7 pt-80 pb-120 wow bounceInRight delay-1s">
             <div class="hero-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/heroimage/Image@1X.png" alt="Hero Image">
+                <img src="<?php echo esc_url($pice['hero-image']['url']);  ?>" alt="<?php echo esc_attr($pice['hero-alt-texts']); ?>">
             </div>
             </div>
         </div>

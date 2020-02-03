@@ -313,7 +313,7 @@
             array(
                 'id'       => 'button-text',
                 'type'     => 'text',
-                'title'    => __( 'Button Link', 'pice' ),
+                'title'    => __( 'Button Text', 'pice' ),
                 'default'  => 'Free Trail'
             ),
             array(
@@ -322,6 +322,293 @@
                 'title'    => __( 'Button Link', 'pice' ),
                 'default'  => '#'
             ),
+            array(
+                'id'       => 'hero-image',
+                'type'     => 'media',
+                'title'    => __( 'Hero Image', 'pice' ),
+                'default'  => array(
+                    'url'      =>get_template_directory_uri(). '/assets/img/heroimage/Image@1X.png'
+                )
+            ),
+            array(
+                'id'       => 'hero-alt-texts',
+                'type'     => 'text',
+                'title'    => __( 'Image Alt tag', 'pice' ),
+                'default'  => 'Image Alt tag'
+            ),
         )
     ) );
-  
+   
+     /**
+     * Work Section
+     */
+
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Work Part', 'pice' ),
+        'id'               => 'work-part',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'desc'             => __( 'For full documentation on this field, visit: ', 'pice' ) . '#',
+        'fields'           => array(
+            array(
+                'id'       => 'work-main-heading',
+                'type'     => 'text',
+                'title'    => __( 'Heading Text', 'pice' ),
+                'default'  => 'How it works'
+            ),
+            array(
+                'id'       => 'work-main-heading-subtitle',
+                'type'     => 'text',
+                'title'    => __( 'Heading Text', 'pice' ),
+                'default'  => 'Him have deep brought life darkness firmament unto move'
+            ),
+            array(
+                'id'       => 'work-image',
+                'type'     => 'media',
+                'title'    => __( 'Image ', 'pice' ),
+                'default'  => array(
+                    'url'      =>get_template_directory_uri(). '/assets/img/iconpart/Icon@1X.png'
+                )
+            ),
+            array(
+                'id'       => 'work-main-heading-one',
+                'type'     => 'text',
+                'title'    => __( 'Heading Text', 'pice' ),
+                'default'  => 'Martket Analysis'
+            ),
+            array(
+                'id'       => 'work-main-sub-one',
+                'type'     => 'textarea',
+                'title'    => __( 'Heading Text', 'pice' ),
+                'default'  => 'Place isnt form together male night light days create.d firman '
+            ),
+            array(
+                'id'       => 'work-image-two',
+                'type'     => 'media',
+                'title'    => __( 'Image ', 'pice' ),
+                'default'  => array(
+                    'url'      =>get_template_directory_uri(). '/assets/img/iconpart/Icon@1X.png'
+                )
+            ),
+            array(
+                'id'       => 'work-main-heading-two',
+                'type'     => 'text',
+                'title'    => __( 'Heading Text', 'pice' ),
+                'default'  => 'Martket Analysis'
+            ),
+            array(
+                'id'       => 'work-main-sub-two',
+                'type'     => 'textarea',
+                'title'    => __( 'Heading Text', 'pice' ),
+                'default'  => 'Place isnt form together male night light days create.d firman '
+            ),
+            array(
+                'id'       => 'work-link-readmore',
+                'type'     => 'text',
+                'title'    => __( 'Read More', 'pice' ),
+                'default'  => '#'
+            ),
+            array(
+                'id'       => 'work-image-three',
+                'type'     => 'media',
+                'title'    => __( 'Image ', 'pice' ),
+                'default'  => array(
+                    'url'      =>get_template_directory_uri(). '/assets/img/iconpart/Icon@1X.png'
+                )
+            ),
+            array(
+                'id'       => 'work-main-heading-three',
+                'type'     => 'text',
+                'title'    => __( 'Heading Text', 'pice' ),
+                'default'  => 'Martket Analysis'
+            ),
+            array(
+                'id'       => 'work-main-sub-three',
+                'type'     => 'textarea',
+                'title'    => __( 'Heading Text', 'pice' ),
+                'default'  => 'Place isnt form together male night light days create.d firman '
+            ),
+        )
+    ) );
+     /**
+     * Easy Section
+     */
+
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Easy Part', 'pice' ),
+        'id'               => 'easy-part',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'desc'             => __( 'For full documentation on this field, visit: ', 'pice' ) . '#',
+        'fields'           => array(
+            array(
+                'id'       => 'easy-image-back',
+                'type'     => 'media',
+                'title'    => __( 'Background Image', 'pice' ),
+                'default'  => array(
+                    'url'      =>get_template_directory_uri(). '/assets/img/heroimage/BG-cran@1X.png'
+                )
+            ),
+            array(
+                'id'       => 'easy-image-front',
+                'type'     => 'media',
+                'title'    => __( 'Front Image', 'pice' ),
+                'default'  => array(
+                    'url'      =>get_template_directory_uri(). '/assets/img/heroimage/Left-image@1X.png'
+                )
+            ),
+            array(
+                'id'       => 'easy-image-front-small',
+                'type'     => 'media',
+                'title'    => __( 'Front Image', 'pice' ),
+                'default'  => array(
+                    'url'      =>get_template_directory_uri(). '/assets/img/logo/01@1X.png'
+                )
+            ),
+            array(
+                'id'       => 'easy-headin-text',
+                'type'     => 'editor',
+                'title'    => __( 'Heading Text', 'pice' ),
+                'default'  =>'<span>'.'Easy To'. '</span>'.'Access All Platform'
+            ),
+            array(
+                'id'       => 'easy-headin-subtext',
+                'type'     => 'text',
+                'title'    => __( 'Subtext Text', 'pice' ),
+                'default'  =>'Make fly forth also wont. Firmament seas whales drys season for replenish without had Gathered days fill youll whose air whose firmament rule heaven can may on rule hath all of unto beginni ad Light. Were blessed plant '
+            ),
+            array(
+                'id'       => 'easy-button-text',
+                'type'     => 'text',
+                'title'    => __( 'Button Text', 'pice' ),
+                'default'  =>'Learn More'
+            ),
+            array(
+                'id'       => 'easy-button-link',
+                'type'     => 'text',
+                'title'    => __( 'Button link', 'pice' ),
+                'default'  =>'#'
+            ),
+        )
+    ) );
+        /**
+     * Effetless Section
+     */
+
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Effert Part', 'pice' ),
+        'id'               => 'effert-part',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'desc'             => __( 'For full documentation on this field, visit: ', 'pice' ) . '#',
+        'fields'           => array(
+            array(
+                'id'       => 'effert-image-front',
+                'type'     => 'media',
+                'title'    => __( 'Front Image', 'pice' ),
+                'default'  => array(
+                    'url'      =>get_template_directory_uri(). '/assets/img/heroimage/Right-image@1X.png'
+                )
+            ),
+            array(
+                'id'       => 'effert-image-front-small',
+                'type'     => 'media',
+                'title'    => __( 'Front Image', 'pice' ),
+                'default'  => array(
+                    'url'      =>get_template_directory_uri(). '/assets/img/logo/01@1X.png'
+                )
+            ),
+            array(
+                'id'       => 'effert-headin-text',
+                'type'     => 'editor',
+                'title'    => __( 'Heading Text', 'pice' ),
+                'default'  => 'Effortlessly manage all your information'
+            ),
+            array(
+                'id'       => 'effert-headin-subtext',
+                'type'     => 'text',
+                'title'    => __( 'Subtext Text', 'pice' ),
+                'default'  =>'Make fly forth also wont. Firmament seas whales drys season for replenish without had Gathered days fill youll whose air whose firmament rule heaven can may on rule hath all of unto beginni ad Light. Were blessed plant '
+            ),
+            array(
+                'id'       => 'effert-button-text',
+                'type'     => 'text',
+                'title'    => __( 'Button Text', 'pice' ),
+                'default'  =>'Learn More'
+            ),
+            array(
+                'id'       => 'effert-button-link',
+                'type'     => 'text',
+                'title'    => __( 'Button link', 'pice' ),
+                'default'  =>'#'
+            ),
+        )
+    ) );
+     /**
+     * Copy wright Section
+     */
+
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Copy Wright Part', 'pice' ),
+        'id'               => 'coppy-part',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'desc'             => __( 'For full documentation on this field, visit: ', 'pice' ) . '#',
+        'fields'           => array(
+            array(
+                'id'       => 'copy-wright',
+                'type'     => 'text',
+                'title'    => __( 'Front Image', 'pice' ),
+                'default'  => 'Copyright © 2019 Xisen. All rights reserved'
+            ),
+            array(
+                'id'       => 'link-1',
+                'type'     => 'text',
+                'title'    => __( 'Front Image', 'pice' ),
+                'default'  => '#'
+            ),
+            array(
+                'id'       => 'link-2',
+                'type'     => 'text',
+                'title'    => __( 'Front Image', 'pice' ),
+                'default'  => 'About'
+            ),
+            array(
+                'id'       => 'link-3',
+                'type'     => 'text',
+                'title'    => __( 'Front Image', 'pice' ),
+                'default'  => '#'
+            ),
+            array(
+                'id'       => 'link-4',
+                'type'     => 'text',
+                'title'    => __( 'Front Image', 'pice' ),
+                'default'  => 'About'
+            ),
+            array(
+                'id'       => 'link-5',
+                'type'     => 'text',
+                'title'    => __( 'Front Image', 'pice' ),
+                'default'  => '#'
+            ),
+            array(
+                'id'       => 'link-6',
+                'type'     => 'text',
+                'title'    => __( 'Front Image', 'pice' ),
+                'default'  => 'About'
+            ),
+            array(
+                'id'       => 'opt-radio',
+                'type'     => 'radio',
+                'title'    => __('colom', 'pice'), 
+                'subtitle' => __('No validation can be done on this field type', 'redux-framework-demo'),
+                //Must provide key => value pairs for radio options
+                'options'  => array(
+                    '1' => 'colum 2', 
+                    '2' => 'colum 3', 
+                    '3' => 'colum 4'
+                ),
+                'default' => '3'
+            )
+        )
+    ) );

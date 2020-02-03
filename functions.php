@@ -10,6 +10,8 @@ include_once( 'inc/customizer/kirki.php' );
 include_once( 'inc/customizer/kirki-customozer-main.php' );
 include_once( 'inc/framework/ReduxCore/framework.php' );
 include_once( 'inc/framework/sample/config.php' );
+include_once( 'inc/cmb2/init.php' );
+include_once( 'inc/cmb2/function.php' );
 
 if ( ! function_exists( 'pice_setup' ) ) :
 	/**
@@ -120,6 +122,45 @@ function pice_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'pice_widgets_init' );
+function sujon_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar one', 'sujon' ),
+		'id'            => 'sidebar-1',
+		'description'   => esc_html__( 'Add widgets here.', 'sujon' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<div class="widgetitle"><h4>',
+		'after_title'   => '</h4></div>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar two', 'sujon' ),
+		'id'            => 'sidebar-2',
+		'description'   => esc_html__( 'Add widgets here.', 'sujon' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<div class="widgetitle"><h4>',
+		'after_title'   => '</h4></div>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar three', 'sujon' ),
+		'id'            => 'sidebar-3',
+		'description'   => esc_html__( 'Add widgets here.', 'sujon' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<div class="widgetitle"><h4>',
+		'after_title'   => '</h4></div>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar four', 'sujon' ),
+		'id'            => 'sidebar-4',
+		'description'   => esc_html__( 'Add widgets here.', 'sujon' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<div class="widgetitle"><h4>',
+		'after_title'   => '</h4></div>',
+	) );
+}
+add_action( 'widgets_init', 'sujon_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
@@ -135,7 +176,7 @@ function pice_scripts() {
 	wp_enqueue_style('pice-defaults', get_template_directory_uri() . '/assets/css/default.css');
 	wp_enqueue_style('pice-responsive', get_template_directory_uri() . '/assets/css/responsive.css');
 	wp_enqueue_style('pice-style', get_template_directory_uri() . '/assets/css/style.css');
-	wp_enqueue_style( 'pice-stylesheet', get_stylesheet_uri() );
+	wp_enqueue_style('pice-stylesheet', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'pice-modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-3.5.0.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'pice-jquery', get_template_directory_uri() . '/assets/js/vendor/jquery-3.2.1.min.js', array('jquery'), '20151215', true );
